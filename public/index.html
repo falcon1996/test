@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <font size="6">Book Service</font>
+    </head>
+    <body>
+        
+        <h3>Create Book</h3>
+        <hr />
+        <form action="/create" method="post">
+            <fieldset>
+                <label for="name">Book Name:</label>
+                <input type="text" id="book" name="name" placeholder="Enter your book name" />
+    
+                <input type="submit" value="Submit" />
+    
+            </fieldset>
+        </form>
+        <br /><br />
+        
+        <h3>View Books</h3>
+        <hr />
+        <form action="/read" method="get">
+            <fieldset>
+    
+                <input type="submit" value="View All" />
+    
+            </fieldset>
+        </form>
+        <br /><br />
+        
+        <h3>Update Book</h3>
+        <hr />
+        <form action="/update" method="post">
+            <fieldset>
+                <label for="name">Book Name:</label>
+                <input type="text" id="book" name="name" placeholder="Enter your original book name" />
+                <input type="text" id="newbook" name="newname" placeholder="Enter your new book name" />
+    
+                <input type="submit" value="Submit" />
+    
+            </fieldset>
+        </form>
+        <br /><br />
+        
+        <h3>Delete Book</h3>
+        <hr />
+        <form action="/delete" method="post">
+            <fieldset>
+                <label for="name">Book Name:</label>
+                <input type="text" id="book" name="name" placeholder="Enter your book name" />
+    
+                <input type="submit" value="Submit" />
+    
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
