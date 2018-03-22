@@ -22,7 +22,6 @@ app.get('/', function(req, res) {
 });
 
 app.get('/read',function(req,res){
-    console.log(req.body);
     book.findOne({type:'all'},function(err,doc){
          book.findOne({type:'all'},function(err,doc){
             if(doc){

@@ -2,6 +2,7 @@
 <html>
     <head>
         <font size="6">Book Service</font>
+        <script src="index.js"></script>
     </head>
     <body>
         
@@ -10,7 +11,7 @@
         <form action="/create" method="post">
             <fieldset>
                 <label for="name">Book Name:</label>
-                <input type="text" id="book" name="name" placeholder="Enter your book name" />
+                <input type="text" id="book" name="name" placeholder="Enter your book name" required/>
     
                 <input type="submit" value="Submit" />
     
@@ -34,8 +35,8 @@
         <form action="/update" method="post">
             <fieldset>
                 <label for="name">Book Name:</label>
-                <input type="text" id="book" name="name" placeholder="Enter your original book name" />
-                <input type="text" id="newbook" name="newname" placeholder="Enter your new book name" />
+                <input type="text" id="book" name="name" placeholder="Oiginal book name" required/>
+                <input type="text" id="newbook" name="newname" placeholder="New book name" required/>
     
                 <input type="submit" value="Submit" />
     
@@ -48,7 +49,7 @@
         <form action="/delete" method="post">
             <fieldset>
                 <label for="name">Book Name:</label>
-                <input type="text" id="book" name="name" placeholder="Enter your book name" />
+                <input type="text" id="book" name="name" placeholder="Enter your book name" required/>
     
                 <input type="submit" value="Submit" />
     
